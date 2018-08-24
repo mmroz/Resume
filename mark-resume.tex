@@ -1,0 +1,150 @@
+\documentclass{resume}
+
+\usepackage{paralist}
+\usepackage{fontawesome}
+
+\renewcommand{\categoryfont}{\sc}
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+\setlength{\topmargin}{-0.5in}
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+\newcommand{\fourth}{$4^{\mbox{\scriptsize th}}$\ }
+
+\author{Mark Mr\'oz}
+% ---- Address --------------------------------------------------------
+
+\address{
+    \faEnvelopeSquare \quad \mbox{\small\tt markmroz95@gmail.com}\\
+    \faPhoneSquare \quad (613) 983-1908\\
+    \faLinkedinSquare \quad \mbox{\small\tt http://linkedin.com/in/mark-mroz}\\
+    \faGithubSquare \quad \mbox{\small\tt http://github.com/mmroz}}
+
+\begin{document}
+\maketitle
+
+% ---- Education ---------------------------------------------------
+
+\begin{category}{Education}
+\citem{University of Ottawa}, Ottawa, Canada (2015 -- Present)
+\begin{itemize}
+\item Bachelor of Science in Software Engineering
+\item Anticipated Graduation in December of 2018
+\end{itemize}
+\end{category}
+
+\begin{category}{Awards \&\\ Achieved}
+  \citemnotbold{ Selected to present Swift WALA at OOPSLA (2018) }
+  \citemnotbold{ Selected to develop Swift WALA as part of UCOSP (2018) }
+  \citemnotbold{ Second Place in the uOttawa Engineering Entrepreneurship Competition (2016) }
+  \citemnotbold{ Scholarship of the Faculty of Science - Admission (2015) }
+\end{category}
+
+% ---- Skills ---------------------------------------------------
+
+\begin{category}{Skills}
+  \newcommand{\skill}[1] {\mbox{\uppercase{{#1}}\ }}
+  \citemnobullet{%
+    \skill{\textbf{iOS}}
+    \skill{Algorithm Design}
+    \skill{\textbf{Swift}}
+    \skill{J2EE}
+    \skill{\textbf{Xcode}}
+    \skill{Automated Testing}
+    \newline
+    \skill{\textbf{Ruby on Rails}}
+    \skill{Python}
+    \skill{\textbf{C/C++}}
+    \skill{Bamboo CI}
+    \newline
+    \skill{\textbf{HTML/CSS/JavaScript}}
+    \skill{Learning Rust}
+    \skill{\textbf{Kotlin}}
+    \skill{Android}
+  }
+\end{category}
+
+% ----- Employment --------------------------------------------
+
+\begin{category}{Work \\experience}
+\citem{Independent Software Developer}, Ottawa, Canada. (03/2017 -- Present)
+\begin{itemize}
+  \item (2017) Designed, developed, deployed and currently provide support for an
+    internal timecard tool used by the Homestead, Inc. property management company.
+    Employees based in the GTA, Kingston and Ottawa areas use the app regularly to
+    track their hours, get timecards approved and submit them to payroll.
+    Weeks of work for their payroll staff were automated into a single click.
+  \item (2018) Development to automate other Homestead processes is under way.
+  \end{itemize}
+\citem{Software Engineering Intern}, Synacor, Inc. (05/2018 -- 09/2018)\\
+Full-time software engineering intern on the Synacor mobile team.
+Developed iOS and Android applications for their customer, AT\&T, and ensured
+their continued success by implementing Continuous Integration using Bamboo (CI).
+\citem{Software Engineering Intern}, William Demant Holdings, Inc. (09/2017 -- 12/2017)\\
+Full-time software engineering intern in Warsaw, Poland.
+Developed iOS applications in Swift and C\# as part of the Discovery Team leveraging machine
+learning to optimize patients hearing device experiences.
+\citem{Software Engineering Intern}, Canada Revenue Agency (01/2017 -- 05/2017)\\
+Full-time software engineering intern in Ottawa, Canada. Designed and implemented internal
+and external web apps such as dashboards and data submission portals for government agencies
+in collaboration with my teammates in the Finance and Benefits (FAB) Group.
+\citem{Software Engineering Intern}, Mark3 Research (05/2016 -- 09/2016)\\
+Full-time software engineering intern in Ottawa, Canada. Designed and implemented a suite
+of automated unit and integration tests for a business solutions dashboard and configured
+Jenkins to test the platform before deployment in collaboration with team members in
+numerous countries.
+\citem{Founder and Software Engineer}, Shortcuts (05/2015 -- 09/2015)\\
+Alongside a team of two, conceptualized, defined and implemented a two-sided marketplace for
+independent hair stylists to sell their services directly to the public. Developed
+the pitch and presented to investors (placing second at the University of
+Ottawa Engineering Entrepreneurship Competition). 
+Designed and implemented large portions of the iOS app.
+\citem{Assistant Manager and Fish Smoker}, Whalesbone (05/2015 -- 09/2015)\\
+Smoked and delivered sustainable seafood to the Ottawa, Kingston, Montreal
+and Gananoque areas. Acquired new customers for the smoked seafood products within the region.
+Assisted in the management of business operations at the Whalesbone including staffing,
+product quality and stock.
+\end{category}
+
+% ----- Publication --------------------------------------------
+
+% \begin{category}{Publication}
+% \citemnotbold{ M. Mroz and G. Franks}: \emph{A performance experiment system supporting fast mapping of system issues.}
+%     Presented at ValueTools 2009, October 20-22.
+% \end{category}
+
+% ----- Projects --------------------------------------------
+
+\begin{category}{Projects}
+\citem{WALA}, University of Ottawa (01/2018 -- Present)\\
+Worked as part of a distributed team of three \fourth year students to
+design and implement a Swift to Java translator using the IBM WALA framework.
+This will ultimately enable support for iOS and macOS static analysis.
+The work will be presented at the OOPSLA (2018) conference in Boston, Mass.
+This project was a component of my degree program.
+\citem {CHIP-8 Interpreter}, Personal/Open Source (2017)\\
+Designed and implemented an interpreter capable of running Chip8 programs in Swift.
+Includes support for video, sound, keypad and timers.
+\citem {DateThis}, Personal/Open Source (2016)\\
+Designed and implemented a Tinder style iOS app with a Parse backend out of interest and 
+definitely not loneliness!
+\citem {Java CookTime}, Personal/Open Source (2016)\\
+ by a SQLite database. This project was a component of my degree program.
+\end{category}
+
+% -------- Reference --------------------------------------------
+
+\begin{category}{References}
+\citemnobullet Available on request.
+\end{category}
+
+\end{document}
